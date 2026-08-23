@@ -59,7 +59,7 @@ Le tableau de bord permet de consulter rapidement :
 
 ### 🔐 Authentification
 
-L'application dispose également d'un système d'authentification permettant de sécuriser l'accès aux fonctionnalités de gestion.
+L'application dispose d'un système d'authentification permettant de sécuriser l'accès aux fonctionnalités de gestion.
 
 ---
 
@@ -81,25 +81,25 @@ L'application dispose également d'un système d'authentification permettant de 
 
 ### Tableau de bord
 
-![Dashboard](screenshots/dashboard.png)
+![Tableau de bord](screenshots/dashboard.png)
 
 Le tableau de bord présente les principales statistiques de la bibliothèque.
 
 ### Gestion des livres
 
-![Livres](screenshots/livres.png)
+![Gestion des livres](screenshots/livres.png)
 
 Cette interface permet d'afficher, rechercher, ajouter, modifier et supprimer les livres.
 
 ### Gestion des emprunteurs
 
-![Emprunteurs](screenshots/emprunteurs.png)
+![Gestion des emprunteurs](screenshots/emprunteurs.png)
 
 Cette interface permet de gérer les personnes enregistrées comme emprunteurs.
 
 ### Gestion des emprunts
 
-![Emprunts](screenshots/emprunts.png)
+![Gestion des emprunts](screenshots/emprunts.png)
 
 Cette interface permet de suivre les livres empruntés, les emprunteurs, les dates de retour prévues et le statut des emprunts.
 
@@ -111,3 +111,112 @@ Cette interface permet de suivre les livres empruntés, les emprunteurs, les dat
 
 ```bash
 git clone https://github.com/hamdaahmedsaid1-wq/gestion-bibliotheque-laravel.git
+```
+
+### 2. Accéder au dossier du projet
+
+```bash
+cd gestion-bibliotheque-laravel
+```
+
+### 3. Installer les dépendances PHP
+
+```bash
+composer install
+```
+
+### 4. Créer le fichier d'environnement
+
+Sous Windows :
+
+```bash
+copy .env.example .env
+```
+
+### 5. Générer la clé de l'application
+
+```bash
+php artisan key:generate
+```
+
+### 6. Configurer la base de données
+
+Configurer les paramètres de connexion à la base de données dans le fichier `.env`.
+
+Ne jamais publier le fichier `.env` sur GitHub.
+
+### 7. Exécuter les migrations
+
+```bash
+php artisan migrate
+```
+
+### 8. Installer les dépendances front-end
+
+```bash
+npm install
+```
+
+### 9. Compiler les ressources front-end
+
+```bash
+npm run dev
+```
+
+### 10. Lancer l'application
+
+```bash
+php artisan serve
+```
+
+Laravel indiquera ensuite l'adresse locale de l'application, généralement :
+
+```text
+http://127.0.0.1:8000
+```
+
+---
+
+## 📂 Architecture du projet
+
+L'application suit l'architecture **MVC (Model - View - Controller)** de Laravel.
+
+- **Models** : gestion et représentation des données
+- **Views** : interfaces utilisateur avec Blade
+- **Controllers** : logique de l'application
+- **Routes** : gestion des différentes URL de l'application
+- **Migrations** : création et évolution de la structure de la base de données
+
+---
+
+## 🎓 Compétences mises en pratique
+
+Ce projet m'a permis de mettre en pratique :
+
+- le développement web avec Laravel ;
+- la programmation PHP ;
+- l'architecture MVC ;
+- les opérations CRUD ;
+- la gestion d'une base de données relationnelle ;
+- la création de routes et de contrôleurs ;
+- l'authentification des utilisateurs ;
+- la conception d'interfaces web ;
+- l'utilisation de Git et GitHub.
+
+---
+
+## 👩‍💻 Auteure
+
+**Hamda Ahmed Said**
+
+Étudiante en Licence Informatique à l'Université de Djibouti.
+
+GitHub : [hamdaahmedsaid1-wq](https://github.com/hamdaahmedsaid1-wq)
+
+LinkedIn : [Hamda Ahmed Said](https://www.linkedin.com/in/hamda-ahmed-said-b70240347)
+
+---
+
+## 📄 Licence
+
+Ce projet est distribué sous licence MIT.
